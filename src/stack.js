@@ -16,3 +16,8 @@ exports.pop = function () {
 exports.peek = function () {
     return _.last(stack);
 }
+
+//Returnerar True om stacken är tom, annars false
+exports.isEmpty = function () {
+    return stack.length === 0;
+}

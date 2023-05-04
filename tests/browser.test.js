@@ -25,7 +25,7 @@ test('The stack should be empty in the beginning', async () => {
 
 test('There should be three buttons on the website', async () => {
     const buttons = await driver.findElements(By.tagName('button'));
-    expect(buttons.length).toBe(4);
+    expect(buttons.length).toBe(3);
 });
 
 describe('Clicking "Pusha till stacken"', () => {
