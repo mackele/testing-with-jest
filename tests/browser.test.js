@@ -23,6 +23,11 @@ test('The stack should be empty in the beginning', async () => {
 	expect(stack).toEqual("n/a");
 });
 
+test('There should be three buttons on the website', async () => {
+    const buttons = await driver.findElements(By.tagName('button'));
+    expect(buttons.length).toBe(4);
+});
+
 describe('Clicking "Pusha till stacken"', () => {
 	it('should open a prompt box', async () => {
 		let push = await driver.findElement(By.id('push'));
